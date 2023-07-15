@@ -33,7 +33,6 @@ class BaseModel:
         else:
             models.storage.new(self)
 
-
     def __str__(self):
         """
         print the instance
@@ -41,9 +40,9 @@ class BaseModel:
         return "[{:s}] ({:s}) {}".format(self.__class__.__name__, self.id,
                                          self.__dict__)
 
-
     def to_dict(self):
-        """convert  self dict and other public instance
+        """
+        convert  self dict and other public instance
                 Return: Dictionary
         """
         rdict = self.__dict__.copy()
@@ -51,7 +50,6 @@ class BaseModel:
         rdict["updated_at"] = self.updated_at.isoformat()
         rdict["__class__"] = self.__class__.__name__
         return rdict
-
 
     def save(self):
         """
