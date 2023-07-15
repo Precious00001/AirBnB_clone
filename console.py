@@ -169,7 +169,7 @@ class HBNBCommand(cmd.Cmd):
         Usage: update <class name> <id> <attribute name> "<attribute value>"
         $ update BaseModel 1234-1234 email "x@g.com" first_name "yy" is equal
         $ update BaseModel 1234-1234 email "x@g.com.
-        """"
+        """
         argl = parse(arg)
         objd = storage.all()
 
