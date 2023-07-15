@@ -7,6 +7,7 @@ from shlex import split
 from models import BaseModel, User, Amenity, Review, City, Place, Statex
 from models import storage
 
+
 def parse(arg):
     curly_braces = re.search(r"\{(.*?)\}", arg)
     brackets = re.search(r"\[(.*?)\]", arg)
@@ -215,4 +216,3 @@ class HBNBCommand(cmd.Cmd):
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
-
