@@ -34,8 +34,6 @@ class FileStorage:
         we access it like so."""
         return FileStorage.__objects
 
-
-
     def reload(self):
         """ read from the file, deserialize the dict obtained from the file
         each val from the dict is a dict of args and kwargs of an instance
